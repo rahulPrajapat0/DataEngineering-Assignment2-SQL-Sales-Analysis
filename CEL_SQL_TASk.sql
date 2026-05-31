@@ -364,8 +364,8 @@ These are four properties that every reliable database transaction must follow t
 > A transaction is treated as a single unit. Either **all steps complete successfully, ornone of them are applied.
 Bank example:
 > Rahul's account is debited ₹5,000. But suddenly the server crashes before Priya's account is credited.
-> - Without Atomicity → Rahul loses ₹5,000, Priya gets nothing. ❌
-> - With Atomicity → The entire transaction is rolled back. Both accounts stay unchanged. ✅
+> - Without Atomicity → Rahul loses ₹5,000, Priya gets nothing. 
+> - With Atomicity → The entire transaction is rolled back. Both accounts stay unchanged. 
 >
 > ```sql
 > START TRANSACTION;
@@ -413,7 +413,7 @@ Bank example:
 > | **Consistency** | Data always follows all rules | "Always Valid" | Cannot transfer more than available balance |
 > | **Isolation** | Transactions don't interfere | "No Interference" | Two simultaneous transfers don't corrupt balance |
 > | **Durability** | Committed data survives crashes | "Permanently Saved" | Transfer record survives server restart |
-
+*/
 -- Q.27
 START TRANSACTION;
 
